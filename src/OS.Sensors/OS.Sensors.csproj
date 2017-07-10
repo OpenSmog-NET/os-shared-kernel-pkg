@@ -6,4 +6,17 @@
     <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RootNamespace>OS.Sensors</RootNamespace>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>$(VersionSuffix)</VersionSuffix>
+    <Description>OpenSmog Sensors Domain Model</Description>
+    <Copyright>OpenSmog</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>http://opensmog.org</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OpenSmog-NET/os-shared-kernel-pkg</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+  </PropertyGroup>
+
 </Project>
