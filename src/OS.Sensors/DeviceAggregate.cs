@@ -15,6 +15,17 @@ namespace OS.Sensors
             };
         }
 
+        public static DeviceAggregate Create(DeviceType type, Guid id, string ownerId = null, string externalId = null)
+        {
+            return new DeviceAggregate()
+            {
+                Id = id,
+                Type = type,
+                OwnerId = ownerId,
+                ExternalId = externalId
+            };
+        }
+
         /// <summary>
         /// The OpenSmog DeviceId
         /// </summary>
