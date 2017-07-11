@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net46</TargetFramework>
     <OutputType>library</OutputType>
     <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
   </PropertyGroup>
