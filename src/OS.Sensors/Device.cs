@@ -2,11 +2,11 @@
 
 namespace OS.Sensors
 {
-    public class DeviceAggregate
+    public class Device
     {
-        public static DeviceAggregate Create(DeviceType type, string ownerId = null, string externalId = null)
+        public static Device Create(DeviceType type, string ownerId = null, string externalId = null)
         {
-            return new DeviceAggregate()
+            return new Device()
             {
                 Id = Guid.NewGuid(),
                 Type = type,
@@ -15,9 +15,9 @@ namespace OS.Sensors
             };
         }
 
-        public static DeviceAggregate Create(DeviceType type, Guid id, string ownerId = null, string externalId = null)
+        public static Device Create(DeviceType type, Guid id, string ownerId = null, string externalId = null)
         {
-            return new DeviceAggregate()
+            return new Device()
             {
                 Id = id,
                 Type = type,
@@ -29,34 +29,34 @@ namespace OS.Sensors
         /// <summary>
         /// The OpenSmog DeviceId
         /// </summary>
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         /// <summary>
         /// The Id of the Owner
         /// </summary>
-        public string OwnerId { get; private set; }
+        public string OwnerId { get; set; }
 
         /// <summary>
         /// The external Id of the sensor (if applicable)
         /// </summary>
-        public string ExternalId { get; private set; }
+        public string ExternalId { get; set; }
 
         /// <summary>
         /// The address of the device (if applicable)
         /// </summary>
-        public string Address { get; private set; }
+        public string Address { get; set; }
 
         /// <summary>
         /// The Type of the Device
         /// </summary>
-        public DeviceType Type { get; private set; }
+        public DeviceType Type { get; set; }
 
         /// <summary>
         /// The Geographical location of the device
         /// </summary>
-        public Location Location { get; private set; }
+        public Location Location { get; set; }
 
-        public DeviceAggregate SetLocation(double longitude, double latitude)
+        public Device SetLocation(double longitude, double latitude)
         {
             if (this.Location == null)
             {
@@ -69,7 +69,7 @@ namespace OS.Sensors
             return this;
         }
 
-        public DeviceAggregate SetAddress(string address)
+        public Device SetAddress(string address)
         {
             this.Address = address;
 

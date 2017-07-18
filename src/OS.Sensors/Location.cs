@@ -6,8 +6,8 @@ namespace OS.Sensors
 {
     public class Location
     {
-        public double Longitude { get; internal set; }
+        public double Longitude { get; set; }
 
-        public double Latitude { get; internal set; }        
+        public double Latitude { get; set; }        
     }
 }
