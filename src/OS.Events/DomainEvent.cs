@@ -7,7 +7,7 @@ namespace OS.Events
         protected DomainEvent()
         {
             Id = Guid.NewGuid();
-            CreatedDate = DateTime.UtcNow();
+            CreatedDate = DateTime.UtcNow;
         }
 
         public Guid CorrelationId { get; set; }
