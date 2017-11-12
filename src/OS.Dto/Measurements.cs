@@ -2,7 +2,7 @@
 
 namespace OS.Dto
 {
-    public sealed class SensorData : List<Measurement>
+    public sealed class Measurements : List<Measurement>
     {
     }
 }
