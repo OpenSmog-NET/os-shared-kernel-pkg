@@ -10,7 +10,8 @@ const string SolutionFile = "OS.SharedKernel.sln";
 
 var packages = getProjectsDirs(new string[] {
     "OS.Dto",
-    "OS.Sensors"
+    "OS.Sensors",
+    "OS.Events"
 });
 
 Task(Restore).Does(() => {
