@@ -3,4 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OS.Dto\OS.Dto.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OS.Dto;
+using System;
 
 namespace OS.Events.Data
 {
