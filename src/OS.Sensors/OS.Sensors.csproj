@@ -1,9 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
-    <OutputType>library</OutputType>
-    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -18,5 +16,4 @@
     <RepositoryType>GIT</RepositoryType>
     <AssemblyVersion>0.0.1.0</AssemblyVersion>
   </PropertyGroup>
-
 </Project>
