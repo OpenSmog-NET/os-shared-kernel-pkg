@@ -9,6 +9,7 @@
 const string SolutionFile = "OS.SharedKernel.sln";
 
 var packages = getProjectsDirs(new string[] {
+    "OS.Data",
     "OS.Dto",
     "OS.Sensors",
     "OS.Events"

@@ -1,16 +1,14 @@
-﻿using System.Runtime.Serialization;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace OS.Dto
-{   
+namespace OS.Dto.v1
+{
     public class Measurement
     {
-        
-        [JsonProperty("timestamp")]
         /// <summary>
         /// Unix Epoch Time GMT+0000
         /// </summary>
-        public int Timestamp { get; set; }
+        [JsonProperty("timestamp")]
+        public long Timestamp { get; set; }
 
         [JsonProperty("data")]
         public Data Data { get; set; } = new Data();

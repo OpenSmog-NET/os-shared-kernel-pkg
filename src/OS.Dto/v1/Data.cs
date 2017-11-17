@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace OS.Dto
+namespace OS.Dto.v1
 {
     public class Data
     {
@@ -63,5 +63,11 @@ namespace OS.Dto
         /// </summary>
         [JsonProperty("press")]
         public double? Press { get; set; }
+
+        /// <summary>
+        /// Total volatile organic compounds [ppb]
+        /// </summary>
+        [JsonProperty("tvoc")]
+        public double? Tvoc { get; set; }
     }
 }
