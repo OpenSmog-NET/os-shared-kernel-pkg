@@ -6,7 +6,7 @@ namespace OS.Data.v1
     /// <summary>
     /// MeasurementData is the storage entity class for Marten.
     /// </summary>
-    public class MeasurementData : Dto.Data
+    public class MeasurementData : Dto.v1.Data
     {
         public MeasurementData()
         {
