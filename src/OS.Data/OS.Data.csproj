@@ -1,7 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFrameworks>netcoreapp2.0;net461;net462</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>OS.Data</RootNamespace>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>$(VersionSuffix)</VersionSuffix>
+    <Description>OpenSmog Data Access Layer</Description>
+    <Copyright>OpenSmog</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>http://opensmog.org</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OpenSmog-NET/os-shared-kernel-pkg</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,5 +24,4 @@
   <ItemGroup>
     <ProjectReference Include="..\OS.Dto\OS.Dto.csproj" />
   </ItemGroup>
-
 </Project>

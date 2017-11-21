@@ -25,6 +25,7 @@ const string TestDir = "test";
 const string Restore = "Restore";
 const string Build = "Build";
 const string Pack = "Pack";
+const string Publish = "Publish";
 const string UnitTests = "UnitTests";
 const string IntegrationTests = "IntegrationTests";
 const string ComponentTests = "ComponentTests";

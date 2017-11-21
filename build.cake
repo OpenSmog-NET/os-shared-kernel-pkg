@@ -40,8 +40,15 @@ Task(IntegrationTests)
     });
 }); // IntegrationTests
 
+Task(Publish)
+    .Does(() => {
+    forEachPath(packages, null, (package) => {
+        DotNetCorePublish(package, getDotNetCorePublishSettings(package));
+    });
+});
+
 Task(Pack)
-    .WithCriteria(canEmitArtifacts(@branch))
+    //.WithCriteria(canEmitArtifacts(@branch))
     .Does(() => {
     forEachPath(packages, null, (package) => {
         DotNetCorePack(package, getDotNetCorePackSettings(package, @branch, @buildNumber));

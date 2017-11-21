@@ -36,7 +36,7 @@ var getDotNetCoreTestSettings = new Func<string, string, DotNetCoreTestSettings>
  * dotnet publish
  */
 var getDotNetCorePublishSettings = new Func<string, DotNetCorePublishSettings>((project) => new DotNetCorePublishSettings() {
-    OutputDirectory = $"{ArtifactsDir}/apps/{getProjectName(project)}",
+    OutputDirectory = $"{ArtifactsDir}/packages/{getProjectName(project)}",
     Configuration = @configuration
 });
 
